@@ -27,11 +27,6 @@ app.post("/random", async (req, res) => {
     };
 
     res.render("index.ejs", { breweryData: breweryData });
-    console.log(randomBrewery.data[0]);
-    console.log(randomBrewery.data[0].name);
-    console.log(randomBrewery.data[0].city);
-    console.log(randomBrewery.data[0].country);
-    console.log(randomBrewery.data[0].website_url);
   } catch (error) {
     console.log(error.message);
     res.status(500).send("Error retrieving data from API");
