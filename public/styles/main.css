@@ -1,3 +1,67 @@
-h1 {
-    color: tomato;
+:root {
+  /* Color Hunt palette */
+  --dark-green: #114232;
+  --light-green: #87a922;
+  --yellow: #fcdc2a;
+  --creamy: #f7f6bb;
+
+  /* Other variables */
+  --margin: 15px;
+}
+
+body {
+  background-image: url("/images/pattern-background.png");
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#header,
+#content,
+#footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#globe-image {
+  max-width: 450px;
+  margin: var(--margin);
+}
+
+#random-brewery {
+  width: 100%;
+  max-width: 450px;
+  color: var(--dark-green);
+  font-size: large;
+  background-color: beige;
+  border-radius: 10px;
+  border-style: solid;
+  border-width: medium;
+  border-color: var(--dark-green);
+}
+
+#random-btn,
+#filter-btn {
+  width: fit-content;
+  margin-top: var(--margin);
+  padding: 10px 20px;
+  background-color: var(--light-green);
+  color: var(--dark-green);
+  font-size: large;
+  font-weight: bold;
+  border-radius: 5px;
+  border: none;
+}
+
+h1,
+h2 {
+  color: var(--dark-green);
+  text-shadow: 2px 2px 5px var(--light-green);
+}
+
+#footer p {
+  text-align: center;
+  color: var(--dark-green);
+  font-size: large;
+  text-shadow: 2px 2px 5px var(--light-green);
 }
